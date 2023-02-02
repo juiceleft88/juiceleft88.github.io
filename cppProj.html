@@ -9,7 +9,82 @@
 </head>
 
 <body>
-    This is where my C++ projects will be held
+    <div>
+        C++ was the first programming language I learned, and am grateful for that because it made learning other languages
+        afterwards much easier. While the complete repository for my C++ projects can be found 
+        <a href="https://github.com/juiceleft88/Object-Oriented-CPP-Projects"> here</a> , I would like to highlight the following three:
+    </div>
+    <br>
+    <div>
+        <h2><strong>Pizza Dough Calculator</strong></h2>
+        <div>
+            <p>When I operated my catering company, Fahrenheit LA, I would need to plan for events and guest counts of various sizes. This meant
+            that I would regularly need to make pizza dough in different quantities to avoid waste and ensure profits. Normally, I would calculate the
+            ingredients I would need with a calculator, and scale for the amount I was making at that moment. Afterwards, I created an excel sheet to help 
+            with this task, but I found it was much easier to create a simple, but effective C++ program that could automate the calculations for me. 
+            </p>
+            <br>
+            <strong>Method:</strong>
+            <p>This program receives the number of 7.5oz doughballs I needed to make, and returns the amount of flour (in Kilograms), I need to use for that batch. 
+            It uses a helper function, <em>finishedDough</em> which uses the number of doughballs needed as an integer parameter. Then inside the function, I 
+            create variables that specify the weight per doughball (7.5oz), as well as how many ounces of finished dough is made with each Kg of flour. I use another
+            variable to assign the value of the function's argument, and then multiply these values to get back the total amount of flour I will need for the
+            given amount of doughballs that need to be made. </p>
+            The source code can be seen <strong><a href="https://github.com/juiceleft88/Object-Oriented-CPP-Projects/blob/master/DoughCalculator.cpp"> here</a></strong>
+            <br>
+            
+        </div>
+    
+    </div>
+    <br>
+    <div>
+        <h2><strong>Soccer Point Tracker</strong></h2>
+        <div>
+            <p>
+                I made this program after I watched a soccer game and wanted to see how I could keep track of individual players' points throughout the match. 
+                I thought it would be fun to do this with a Struct data structure instead of just creating a lot of 
+                if statements. 
+            </p>
+            <br>
+            <strong>Method:</strong>
+            <p>
+                I first create a struct, named Futbolero, to hold the variables that will hold the player's name and stats. Then I create a static
+                integer variable to hold the size of the team, and instantiate Futbolero with an object array called 'player' with the size of the variable we just created.
+                I then initialize variables that hold the total team points and points scored by the highest scorer.
+                <br>
+                Next I iterate through the 'player' array, asking the user for input to fill in the desired fields for each player (name, points, and number)
+                for every player on the team. I access the attributes of the Futbolero struct by way of the 'player' object. Once all the fields are inputted,
+                the program tallies the team's total points, as well as the highest score. 
+                <br><br>
+                The source code can be seen 
+                <strong><a href="https://github.com/juiceleft88/Object-Oriented-CPP-Projects/blob/master/Structs_SoccerMatch.cpp"> here</a></strong>.
+            </p>
+        </div>
+    </div>
+    <br>
+    <div>
+        <h2><strong>Spellchecker using Levenstein Distance</strong></h2>
+        <div>
+            <p>
+                This was a very challenging program I made as an end-of-year project to demonstrate Object-Oriented Programming concepts. In particular, this program is used to check the spelling of words
+                and if a word is deemed to be misspelled, suggests corrections based on the Levenshtein distance, which measures the similarity between words and measures how many edits would be needed to transform one word into another
+                using three operations: Insertion, Deletion and Substitution. I used a file called words.txt to serve as my dictionary in order to compare the user-inputted words (in spellCheckMain.cpp) for correct spelling.
+            </p>
+            <br>
+            <strong>Method:</strong>
+            <p>
+                I first defined a class in spellCheck.h with functions that would allow me to load the dictionary file, find words, and give suggestions for corrections. Then in spellCheck.cpp I implement the member functions that were
+                defined in spellCheck.h, and also the function to implement the Levenshtein distance. This Levenshtein distance function takes the reference address of two strings as parameters, and use size_t for array and loop counting. 
+                I then loop through the strings to find the 'distance' between the words (aka number of transformations needed to change one of the given words to the other). 
+                Next I use the 'suggest' function, which takes a string and an integer as arguments, to check the given string for correctness and display the integer amount of words as possible suggestions for the word which 
+                incorrectly spelled. This method takes into account the Levenshtein distance used in the previous function, and suggests us the words based on the minimum number of transformations needed to get to the correct words. 
+                For instance, calling suggest("buble", 3) will return three suggestions: bible, bugle, and bubble.
+                
+                The source code can be seen 
+                <strong><a href="https://github.com/juiceleft88/Object-Oriented-CPP-Projects/tree/master/SpellCheckerProg"> here</a></strong>.
+            </p>
+        </div>
+    </div>
     
 </body>
 </html>
