@@ -1,0 +1,42 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+  .img-fluid {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+  }
+  
+  .img-fluid:hover {
+      filter: none;
+      -webkit-filter: grayscale(0);
+  }
+
+  .label {
+      font: 18px Courier, sans-serif;
+      color: black;
+
+  }
+
+  .label:hover {
+    background-color: orangered
+
+}
+ .title {
+    font: 40px Courier, sans-serif;
+    font-stretch: normal;
+}
+
+#disabled{
+    color: orangered;
+    pointer-events: none;
+    cursor: default;
+}
+  
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+  }
