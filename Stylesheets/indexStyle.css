@@ -15,6 +15,11 @@
     pointer-events: none;
     cursor: default;
   }
+
+  .navbar-brand{
+    pointer-events: none;
+    cursor: default;
+  }
   
 
   
