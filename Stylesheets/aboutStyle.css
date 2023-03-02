@@ -4,6 +4,11 @@
     border-radius: 0;
   }
 
+  .navbar-brand{
+    pointer-events: none;
+    cursor: default;
+  }
+
  .title {
     font: 40px Courier, sans-serif;
     font-stretch: normal;

@@ -4,6 +4,11 @@
     border-radius: 0;
   }
 
+  .navbar-brand{
+    pointer-events: none;
+    cursor: default;
+  }
+
   .img-fluid {
       filter: grayscale(100%);
       -webkit-filter: grayscale(100%);
