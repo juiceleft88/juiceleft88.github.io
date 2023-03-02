@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Machine Learning</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/Users/hugoizquierdo/Documents/GitHub/Chef2Tech/Stylesheets/projectPages.css">
+  <script src="https://kit.fontawesome.com/bb0c7a7520.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><i style="font-size:18px" class="fas">&#xf818;</i>  <i style="font-size:18px" class="fas">&#xf061;</i>  <i style="font-size:18px" class="fas">&#xf108;</i></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/Users/hugoizquierdo/Documents/GitHub/Chef2Tech/index.html">Home</a>
+          </li>
+          <li class = "nav-item">
+              <a href="/Users/hugoizquierdo/Documents/GitHub/Chef2Tech/about.html">About</a>
+          </li>
+          <li class = "nav-item">
+              <a href="/Users/hugoizquierdo/Documents/GitHub/Chef2Tech/projects.html">Projects</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h2 class="title">Machine Learning / A.I. Projects</h2>   
+  </div>
+</div>
+
+<body>
+    <div class="container-fluid">
+        <div>   
+            <p class="text">
+                I have grouped my Artificial Intelligence and Data Science / Machine Learning projects in one repository for ease of viewing.
+                I used Python exclusively for these projects in order to work with Pandas and Numpy libraries, and for ease of use. The complete works can
+                be found <a href="https://github.com/juiceleft88/AI-ML-Programs"> here</a> , but will highlight the following projects:
+            </p>
+        </div>
+        <br><br><br><br><br>
+        <div>
+            <center><h2><strong><u>Butterfly Image Classifier</u></strong></h2></center>
+            <div>
+                <p class="text">
+                    This group project was a semester-long effort to create a machine learning algorithm that would identify the different species of butterflies based on provided image sets. 
+                    The original competition <a href = "https://www.kaggle.com/competitions/yum-or-yuck-butterfly-mimics-2022/overview">prompt</a> was found on kaggle, and we provided our solution 
+                    as part of our end-of-year Data Science assignment. Images of butterflies will be given to help train the machine in classifying the butterflies 
+                    as Yum (Non-poisonous) or Yuck (Poisonous) to birds based on the features laid out in the dataset. <br>
+                    Various classification and image processing techniques and libraries are used throughout our program, and documented throughout. Due to the vast amount of photos used for training and testing,
+                    I have not uploaded them to the repository, but have included a final report with our findings and methods which include screenshots of our outputs. 
+                    <br>
+                    Our entire program and final report can be found <a href = "https://github.com/juiceleft88/AI-ML-Programs/tree/main/DataScienceGroupProj"><strong><u>here</u></strong>.</a>
+                    <br>
+                    <div class="container-fluid"> <center>
+                        <img src="/Users/hugoizquierdo/Documents/GitHub/Chef2Tech/Images/butterfly.png" class="img-thumbnail" width = "480" height = "480" alt="butterfly">
+                    </center>
+                    </div>
+                </p> 
+            </div>
+        </div>
+            <br><br><br>
+            <div>
+                <center><h2><strong><u>Tic-Tac-Toe A.I. Player</u></strong></h2></center>
+                <div>
+                    <p class="text">
+                        The goal of this program is to create an agent that can make optimal moves to win a Tic Tac Toe game. Given an input game state,
+                        I try and find the best move for the 'X' player (our intelligent agent) using the Minimax algorithm, where we assign a numeric score of 
+                        +10 for an 'X' win, -10 for an 'O' win, and 0 for a draw. In addition, in order to motivate the agent to win or lose as soon as possible,
+                        I subtract the depth of the completed game state from the score (as shown below).
+                        <br>
+                        <div class="container-fluid"><center>
+                            <img src="/Users/hugoizquierdo/Documents/GitHub/Chef2Tech/Images/MinimaxScoringExample.png" class="img-thumbnail" width = "480" height = "480" alt="Minimax Scoring">
+                        </center>
+                        </div>
+                        I then create a function Minimax that uses a dictionary to pair the values of the game state to the game score, and so incorporate the depth-score to get an optimal
+                        move. I then incorporate the Minimax algorithm using recursion to get a score at each depth level of the game, then compare that to the highest or lowest possible scores
+                        at that depth, then use the appropriate one as the move in our X_move function. 
+                        Once we run the code, the intelligent agent ('X') plays against 'O' (which just prints the next possible move), and finds the most efficient path to a win score. The entire program
+                        can be found <a href = "https://github.com/juiceleft88/AI-ML-Programs/blob/main/TicTacToe/TicTacMinimax.py"><strong><u>here</u></strong>.</a>
+                        <br>
+                        <div class="container-fluid"><center>
+                            <img src="/Users/hugoizquierdo/Documents/GitHub/Chef2Tech/Images/MinimaxRunning.png" class="img-thumbnail" width = "150" height = "300" alt="Minimax Running">
+                        </center>
+                        </div>
+        
+                    </p> 
+                </div>
+            </div>
+            <br><br><br>
+            <div>
+                <center><h2><strong><u>Heart Disease Predictor</u></strong></h2></center>
+                <div>
+                    <p class="text">
+                        In this Machine Learning project, I use a heart disease dataset provided by UC Irvine. Using the features in the data, I build a Logistic Regression Classifier model to predict heart disease (the label) based on 
+                        the training and testing datasets I create using sklearn, then compute and report the accuracy. 
+                        <br>
+                        <div class="container-fluid"> <center>
+                            <img src="/Users/hugoizquierdo/Documents/GitHub/Chef2Tech/Images/heartdisease.png" class="img-thumbnail" width = "480" height = "480" alt="heartdisease">
+                        </center>
+                        </div>
+                        I also use matplot library to plot the ROC Curve for this classifier to show the performance of the model in terms of True Positive Rate vs False Positive Rate at different classification thresholds,
+                        and compute the area under the curve (AUC) to measure the quality of the model's predictions.  The entire program
+                        can be found <a href = "https://github.com/juiceleft88/AI-ML-Programs/blob/main/HeartDisPredictor/HeartDiseasePredictorML.ipynb"><strong><u>here</u></strong>.</a>
+                        <br>
+                        <div class="container-fluid"><center>
+                            <img src= "/Users/hugoizquierdo/Documents/GitHub/Chef2Tech/Images/HeartDiseaseROC.png" class="img-thumbnail" width = "480" height = "480" alt="Heart Disease ROC">
+                        </center>
+                        </div>
+                    </p> 
+                </div>
+            </div>
+    </div>
+</body>
+
+<footer class="container-fluid text-center">
+  <p>Chef 2 Tech, Hugo Izquierdo's personal site. Created in 2023.</p>
+</footer>
+
+</body>
+</html>
