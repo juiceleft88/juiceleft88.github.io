@@ -16,6 +16,11 @@
     cursor: default;
   }
 
+  .name {
+    font: 40px Courier, sans-serif;
+    font-stretch: wider;
+  }
+
   .navbar-brand{
     pointer-events: none;
     cursor: default;
