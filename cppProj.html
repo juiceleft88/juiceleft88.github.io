@@ -50,22 +50,15 @@
 
 <body>
     <div class="container-fluid">
-        <div>   
-            <p class="text">
-                C++ was the first programming language I learned, and am grateful for that because it made learning other languages
-                afterwards much easier. While the complete repository for my C++ projects can be found 
-                <a class="link" href="https://github.com/juiceleft88/Object-Oriented-CPP-Projects"> <strong>here</strong></a> , I would like to highlight the following three projects:
-            </p>
-        </div>
-        <br>
+
         <div>
-            <h2 class="heading"><strong>Soccer Point Tracker</strong></h2>
+            <center><h2 class="heading"><a class="link" href="https://github.com/juiceleft88/Object-Oriented-CPP-Projects/blob/master/Structs_SoccerMatch.cpp"><strong><u>Soccer Point Tracker</u></strong></a></h2></center>
             <div>
                 <p class="text">
                     This program keeps track of individual soccer players' points throughout the match. I decided to practice using a Struct data structure for this.
                 </p>
                 <br>
-                <strong>Method:</strong>
+                <h4><strong>Method:</strong></h4>
                 <p class="text">
                     I first create a struct, named Futbolero, to hold the variables that will hold the player's name and stats. Then I create a static
                     integer variable to hold the size of the team, and instantiated 'Futbolero' with an object array called 'player' with the size of the variable we just created.
@@ -75,14 +68,12 @@
                     for every player on the team. I access the attributes of the Futbolero struct by way of the 'player' object. Once all the fields are inputted,
                     the program tallies the team's total points, as well as the highest score. 
                     <br><br>
-                    The source code can be seen 
-                    <strong><a class="link" href="https://github.com/juiceleft88/Object-Oriented-CPP-Projects/blob/master/Structs_SoccerMatch.cpp">here</a></strong>.
                 </p>
             </div>
         </div>
         <br>
         <div>
-            <h2 class="heading"><strong>Spellchecker using Levenstein Distance</strong></h2>
+            <center><h2 class="heading"><a class="link" href="https://github.com/juiceleft88/Object-Oriented-CPP-Projects/tree/master/SpellCheckerProg"><strong><u>Spellchecker using Levenstein Distance</u></strong></a></h2></center>
             <div>
                 <p class="text">
                     This was a very challenging program I made as an end-of-year project to demonstrate Object-Oriented Programming concepts. In particular, this program is used to check the spelling of words
@@ -90,7 +81,7 @@
                     using three operations: Insertion, Deletion and Substitution. I used a file called words.txt to serve as my dictionary in order to compare the user-inputted words (in spellCheckMain.cpp) for correct spelling.
                 </p>
                 <br>
-                <strong>Method:</strong>
+                <h4><strong>Method:</strong></h4>
                 <p class="text">
                     I first defined a class in spellCheck.h with functions that would allow me to load the dictionary file, find words, and give suggestions for corrections. Then in spellCheck.cpp I implement the member functions that were
                     defined in spellCheck.h, and also the function to implement the Levenshtein distance. This Levenshtein distance function takes the reference address of two strings as parameters, and use size_t for array and loop counting. 
@@ -99,8 +90,6 @@
                     incorrectly spelled. This method takes into account the Levenshtein distance used in the previous function, and suggests us the words based on the minimum number of transformations needed to get to the correct words. 
                     For instance, calling suggest("buble", 3) will return three suggestions: bible, bugle, and bubble.
                     <br><br>
-                    The source code can be seen 
-                    <strong><a class="link" href="https://github.com/juiceleft88/Object-Oriented-CPP-Projects/tree/master/SpellCheckerProg"> here</a></strong>.
                 </p>
             </div>
         </div>

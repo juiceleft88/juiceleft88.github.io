@@ -25,6 +25,12 @@
     pointer-events: none;
     cursor: default;
   }
+
+  .title{
+    font: 22px Helvetica, serif;
+    font-stretch: wider;
+    font-style: italic;
+  }
   
 
   
